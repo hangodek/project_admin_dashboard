@@ -4,14 +4,15 @@
     box-sizing: border-box;
 }
 
-body {
+html, body {
     width: 100%;
+    height: 100%;
 }
 
 .container {
     display: grid;
     grid-template-columns: 1fr 4fr;
-    height: 100vh;
+    height: 200vh;
 }
 
 .left-menu {
@@ -19,6 +20,7 @@ body {
     background-color: #1992D4;
     color: white;
     padding: 20px;
+    height: 200vh;
 }
 
 .left-menu h1 {
@@ -32,18 +34,21 @@ body {
     align-items: center;
     border-radius: 10px;
     height: 35px;
-    transition: background-color 500ms ease;
+    transition: all 500ms ease;
 }
 
 .left-menu h4:hover {
     cursor: pointer;
     background-color: rgb(10, 114, 170);
+    transform: scale(1.1);
 }
 
 /*                         */
 
 .right-menu {
-    
+    display: flex;
+    flex-direction: column;
+    height: 200vh;
 }
 
 .right-menu .top { 
@@ -64,6 +69,11 @@ body {
     gap: 20px;
 }
 
+.right-menu .part1-left input {
+    border-radius: 10px;
+    background-color: #E2E8F0;
+}
+
 .right-menu .part1-right {
     display: flex;
     justify-content: center;
@@ -71,10 +81,16 @@ body {
     gap: 20px;
 }
 
-.right-menu .part1-left input {
-    border-radius: 10px;
-    background-color: #E2E8F0;
+.right-menu .part1 img {
+    transition: transform 500ms ease;
 }
+
+.right-menu .part1 img:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+
 
 .right-menu .part2 {
     display: flex;
@@ -103,16 +119,75 @@ body {
     color: white;
     text-align: center;
     align-content: center;
-    transition: background-color 500ms ease;
+    transition: all 500ms ease;
 }
 
 .right-menu .part2-right div:hover {
     cursor: pointer;
     background-color: rgb(10, 114, 170);
+    transform: scale(1.1);
 }
 
 /*                               */
 
 .bottom {
-    background-color: red;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    padding: 20px;
+    background-color: #E2E8F0;
+    height: 200vh;
+}
+
+.bottom-left .project-cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 10px;
+    gap: 20px;
+}
+
+.bottom-left .project-cards > div {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    height: 200px;
+    width: 350px;
+    background-color: white;
+    box-shadow: hsl(39, 100%, 51%) 8px 0px 0px 0px inset, rgb(0 0 0 / 20%) 2px 2px;;
+    border-radius: 5px;
+}
+
+.bottom-left .project-cards > div > .left-card-buttons {
+    display: flex;
+    justify-content: flex-end;
+    gap: 15px;
+}
+
+.bottom-left .project-cards > div > .left-card-buttons img {
+    transition: transform 500ms ease;
+}
+
+.bottom-left .project-cards > div > .left-card-buttons img:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.bottom-right {
+    display: grid;
+    grid-template-rows: 40px 1fr 40px 1fr;
+    height: 100vh;
+}
+
+.bottom-right h3 {
+    margin-top: 10px;
+}
+
+.bottom-right .announcement-cards {
+    padding: 20px;
+    background-color: white;
+    box-shadow: rgb(0 0 0 / 20%) 2px 2px 2px;
+}
+.bottom-right .trending-cards {
+    padding: 20px;
+    background-color: white;
+    box-shadow: rgb(0 0 0 / 20%) 2px 2px 2px;
 }
