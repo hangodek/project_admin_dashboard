@@ -43,5 +43,76 @@ body {
 /*                         */
 
 .right-menu {
-    border: 1px solid red;
+    
+}
+
+.right-menu .top { 
+    padding: 20px;
+    box-shadow: rgb(0 0 0 / 20%) 0px 3px;
+}
+
+.right-menu .part1 {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+}
+
+.right-menu .part1-left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.right-menu .part1-right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.right-menu .part1-left input {
+    border-radius: 10px;
+    background-color: #E2E8F0;
+}
+
+.right-menu .part2 {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    padding: 5px;
+}
+
+.right-menu .part2-left {
+    display: flex;
+    gap: 10px;
+}
+
+.right-menu .part2-right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.right-menu .part2-right div {
+    background-color: #1992D4;
+    height: 40px;
+    width: 100px;
+    border-radius: 20px;
+    color: white;
+    text-align: center;
+    align-content: center;
+    transition: background-color 500ms ease;
+}
+
+.right-menu .part2-right div:hover {
+    cursor: pointer;
+    background-color: rgb(10, 114, 170);
+}
+
+/*                               */
+
+.bottom {
+    background-color: red;
 }
